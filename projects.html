@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Projects | Natasha Gonsalves</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/academicons.min.css">
+	<script src="https://kit.fontawesome.com/cf1c3caa39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light py-2" style="position: sticky; top: 0; z-index: 1030;">
+		<a class="navbar-brand" href="index.html">Natasha Gonsalves</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+				<li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container pt-4 allstuffp">
+		<div class="col-md-12 pt-3 about text-justify">
+			<div class="header-1 pt-2">Projects</div>
+
+			<!-- Phaser Pedal Design -->
+			<div class="project-item py-3">
+				<div class="project-header">
+					<div class="project-title">Phaser Pedal Design</div>
+					<div class="project-time">April 2024</div>
+				</div>
+				<div class="project-desc">
+					Phasers are widely used in audio processing to create swirling, spatial effects by modulating the phase of an audio signal. 
+					This pedal capitalizes on the properties of all-pass filters, which introduce phase shifts without affecting amplitude, 
+					to generate rich and evolving sonic textures. The circuit, based on a design from <a href="https://www.barbarach.com" target="_blank">barbarach.com</a>, 
+					was simulated on Tina TI, with constraints set based on available components. 
+					Hardware implementation involved estimating and tuning component values through testing. The system was built in modular stages 
+					to simplify debugging and testing. Audio signals were interfaced through a Behringer audio interface connected to a DAW for real-time sound processing.
+					<br><b>Tools:</b> TinaTI, KiCad
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Path Finder Bot -->
+			<div class="project-item py-3">
+				<div class="project-header">
+					<div class="project-title">Path Finder Bot</div>
+					<div class="project-time">October 2024</div>
+				</div>
+				<div class="project-desc">
+					Built a real-time path finder bot using an STM32 microcontroller, equipped with obstacle detection and 
+					PID-based correction to autonomously navigate complex environments. The bot makes real-time decisions to 
+					avoid collisions based on continuous sensor feedback.
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Google Girl Hackathon -->
+			<div class="project-item py-3">
+				<div class="project-header">
+					<div class="project-title">Google Girl Hackathon – Silicon Track</div>
+					<div class="project-time">March 2025</div>
+				</div>
+				<div class="project-desc">
+					Developed and tested a Machine Learning model for predicting logic depth in SoC design, improving accuracy compared to 
+					traditional synthesis report-based estimation. Achieved <b>2nd place</b> in the Silicon Track among <b>58,000 participants</b>.
+				</div>
+			</div>
+
+			<hr>
+
+			<!-- Hardware-based Heap Sort -->
+			<div class="project-item py-3">
+				<div class="project-header">
+					<div class="project-title">Hardware-Based Implementation of Heap Sort Algorithm</div>
+					<div class="project-time">April 2025</div>
+				</div>
+				<div class="project-desc">
+					Designed and implemented a hardware-based Heap Sort algorithm using a datapath and FSM controller architecture in Verilog. 
+					The design separates datapath and controller logic for modularity and ease of verification. 
+					The Heap Sort algorithm was divided into <i>Heapify</i>, <i>Build-heap</i>, and <i>Extract-max</i> operations. 
+					A high-level synthesis was performed using <b>Bambu</b>, followed by RTL verification with <b>Icarus</b> and <b>Yosys</b>.
+					<br><b>Tools:</b> Yosys, Bambu, Icarus
+				</div>
+			</div>
+
+			<div class="page-bottom-space"></div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<style>
+		.navbar { padding-top: 1.0rem !important; padding-bottom: 1.0rem !important; background-color: #f1f3f5 !important; }
+		.navbar .nav-link, .navbar-brand { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; font-size: 1rem; }
+		.navbar-toggler { margin-left: auto; }
+
+		.about { font-size: 1rem; }
+		.header-1 { font-size: 1.8rem; color: #444; }
+
+		.project-item { margin-bottom: 0; }
+		.project-header { display: flex; justify-content: space-between; align-items: baseline; }
+		.project-title { font-weight: 500; color: #222; }
+		.project-time { color: #777; font-size: 0.95rem; }
+		.project-desc { color: #444; margin-top: 5px; line-height: 1.5; text-align: justify; }
+
+		.page-bottom-space { height: 72px; }
+
+		@media only screen and (max-width: 576px) {
+			.project-header { flex-direction: column; align-items: flex-start; }
+			.project-time { font-size: 0.85rem; }
+			.project-title { font-size: 1rem; }
+			.project-desc { font-size: 0.9rem; }
+		}
+	</style>
+</body>
+</html>
