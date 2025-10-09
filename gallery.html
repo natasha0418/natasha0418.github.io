@@ -26,19 +26,109 @@
 	<div class="container pt-4 allstuffp">
 		<div class="col-md-12 pt-3 about text-justify">
 			<div class="header-1 pt-2">Gallery</div>
-			<p>Some snapshots from projects, events and life.</p>
 
-			<div class="row" id="gallery-grid">
-				<!-- Each image uses Bootstrap responsive classes -->
-				<div class="col-6 col-md-4 col-lg-3 mb-4">
-					<img src="images/pic1.jpeg" alt="Portrait" class="img-fluid rounded shadow-sm">
+			<!-- IIT Roorkee Section -->
+			<div class="gallery-section">
+				<div class="row gallery-grid">
+					<div class="col-12 mt-3 mb-2 text-center"><div class="header-1 pt-2">IIT Roorkee</div></div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/iitr/1.jpeg" alt="iitr 1" class="img-fluid gallery-img" data-section="IIT Roorkee">
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/iitr/2.jpeg" alt="iitr 2" class="img-fluid gallery-img" data-section="IIT Roorkee">
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/iitr/3.jpeg" alt="iitr 3" class="img-fluid gallery-img" data-section="IIT Roorkee">
+						</div>
+					</div>
 				</div>
-				<!-- Add more images here as they become available -->
 			</div>
 
+			<!-- Project MANAS Section -->
+			<div class="gallery-section">
+				<div class="row gallery-grid">
+					<div class="col-12 mt-3 mb-2 text-center"><div class="header-1 pt-2">Project MANAS</div></div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/manas/1.jpeg" alt="manas 1" class="img-fluid gallery-img" data-section="Project MANAS">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- EnC Section -->
+			<div class="gallery-section">
+				<div class="row gallery-grid">
+					<div class="col-12 mt-3 mb-2 text-center"><div class="header-1 pt-2">EnC</div></div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/enc/1.jpeg" alt="enc 1" class="img-fluid gallery-img" data-section="IE-EnC">
+						</div>
+					</div>
+						<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+							<div class="gallery-tile">
+								<img src="images/gallery/enc/2.jpeg" alt="enc 2" class="img-fluid gallery-img" data-section="IE-EnC">
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+							<div class="gallery-tile">
+								<img src="images/gallery/enc/3.jpeg" alt="enc 3" class="img-fluid gallery-img" data-section="IE-EnC">
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<!-- Phaser Section -->
+			<div class="gallery-section">
+				<div class="row gallery-grid">
+					<div class="col-12 mt-3 mb-2 text-center"><div class="header-1 pt-2">Phaser Pedal Project</div></div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/phaser/1.png" alt="phaser 1" class="img-fluid gallery-img" data-section="Phaser">
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/phaser/2.png" alt="phaser 2" class="img-fluid gallery-img" data-section="Phaser">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Bot Section -->
+			<div class="gallery-section">
+				<div class="row gallery-grid">
+					<div class="col-12 mt-3 mb-2 text-center"><div class="header-1 pt-2">Pathfinder</div></div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/bot/1.jpeg" alt="bot 1" class="img-fluid gallery-img" data-section="Bot">
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/bot/2.jpeg" alt="bot 2" class="img-fluid gallery-img" data-section="Bot">
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 px-0 mb-0">
+						<div class="gallery-tile">
+							<img src="images/gallery/bot/3.jpeg" alt="bot 3" class="img-fluid gallery-img" data-section="Bot">
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="page-bottom-space"></div>
 		</div>
 	</div>
+			
+
+			
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
@@ -52,19 +142,79 @@
 		.about { font-size: 1rem; }
 		.header-1 { font-size: 1.8rem; color: #444; }
 
-		#gallery-grid img { object-fit: cover; width: 100%; height: 100%; }
-		#gallery-grid .col-6, #gallery-grid .col-md-4, #gallery-grid .col-lg-3 { display: flex; }
-		#gallery-grid .col-6 > img, #gallery-grid .col-md-4 > img, #gallery-grid .col-lg-3 > img { height: 180px; }
-
-		@media (min-width: 768px) {
-			#gallery-grid .col-md-4 > img { height: 200px; }
-		}
-		@media (min-width: 992px) {
-			#gallery-grid .col-lg-3 > img { height: 220px; }
-		}
+		/* Gallery layout: 1 per row on XS, up to 3 per row on >= md */
+		.gallery-grid img { width: 100%; height: 100%; display: block; object-fit: cover; }
+		.gallery-grid .col-12 { padding-left: 0; padding-right: 0; }
+		/* Uniform square tiles with spacing */
+		.gallery-tile { position: relative; width: 100%; padding-top: 100%; /* 1:1 ratio */ }
+		.gallery-tile > img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
+		/* Add spacing between items (override Bootstrap px-0 utility) */
+		.gallery-grid > [class^="col-"] { padding-left: 8px; padding-right: 8px; margin-bottom: 12px; }
+		.gallery-grid > [class^="col-"].px-0 { padding-left: 8px !important; padding-right: 8px !important; }
+		.gallery-section { padding: 16px 12px 24px 12px; margin-top: 8px; margin-bottom: 8px; }
+		.gallery-section:nth-of-type(odd) { background: #ffffff; }
+		.gallery-section:nth-of-type(even) { background: #eef1f4; }
+		/* Ensure the section background fully wraps the tiles */
+		.container .gallery-section .row { margin-left: 0; margin-right: 0; }
 
 		.page-bottom-space { height: 72px; }
 	</style>
+
+	<!-- Modal for lightbox -->
+	<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content" style="background: transparent; border: none;">
+				<button type="button" class="close ml-auto pr-3 pt-2" data-dismiss="modal" aria-label="Close" style="color: white; opacity: 1;">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<img id="modalImage" src="" alt="Preview" class="img-fluid rounded">
+				<div id="modalCaption" class="text-center text-white pb-3" style="font-weight:500;"></div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// Build a flat ordered list of gallery images for navigation
+		var galleryImages = [];
+		function rebuildGalleryIndex() {
+			galleryImages = [];
+			$('.gallery-img').each(function(index){
+				galleryImages.push({ src: $(this).attr('src'), section: $(this).data('section') || '' });
+				$(this).attr('data-index', index);
+			});
+		}
+		rebuildGalleryIndex();
+
+		var currentIndex = -1;
+		function openAt(index) {
+			if (galleryImages.length === 0) return;
+			// wrap around
+			if (index < 0) index = galleryImages.length - 1;
+			if (index >= galleryImages.length) index = 0;
+			currentIndex = index;
+			var item = galleryImages[currentIndex];
+			$('#modalImage').attr('src', item.src);
+			$('#modalCaption').text(item.section || '');
+			$('#imageModal').modal('show');
+		}
+
+		// Open clicked image in modal at full size
+		$(document).on('click', '.gallery-img', function () {
+			var idx = parseInt($(this).attr('data-index'));
+			if (isNaN(idx)) { rebuildGalleryIndex(); idx = parseInt($(this).attr('data-index')); }
+			openAt(idx);
+		});
+
+		// Keyboard navigation when modal is open
+		$(document).on('keydown', function(e){
+			if (!$('#imageModal').hasClass('show')) return;
+			if (e.key === 'ArrowRight') { e.preventDefault(); openAt(currentIndex + 1); }
+			else if (e.key === 'ArrowLeft') { e.preventDefault(); openAt(currentIndex - 1); }
+		});
+
+		// Rebuild index on window resize or DOM changes (simple hooks)
+		$(window).on('resize', rebuildGalleryIndex);
+	</script>
 </body>
 </html>
 
